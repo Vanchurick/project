@@ -1,0 +1,25 @@
+%title {
+  font-family: $main-font;
+  font-size: $title-font-size;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 16px;
+}
+
+%link {
+  text-decoration: none;
+  font-family: $main-font;
+  font-weight: 700;
+}
+
+%button {
+  width: 145px;
+  height: 35px;
+  background-color: $button-color;
+  font-family: $main-font;
+  font-weight: 700;
+  border: none;
+  font-size: 6px;
+  color: #fff;
+  text-transform: uppercase;
+}

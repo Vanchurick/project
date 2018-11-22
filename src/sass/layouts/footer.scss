@@ -1,0 +1,81 @@
+footer {
+  height: 85px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+
+  background-color: #181c27;
+  font-size: 4px;
+  padding: 10px 0;
+  
+
+  &__logo {
+    width: 30px;
+    height: 10px;
+    background-image: url(../../images/logo_goit.png);
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__contacts {
+    color: #fff;
+    width: 15%;
+
+    div {
+      padding-bottom: 3px;
+    }
+  }
+
+  
+  &__contacts p:first-child {
+    font-family: $main-font;
+    text-transform: uppercase;
+    font-weight: 900;   
+  }
+
+  &__button {
+    @extend %button;
+    width: 60px;
+    height: 15px;
+    background-color: transparent;
+    border: 1px solid #192c45;
+    font-size: 3px;
+    
+  
+  }
+    
+  
+}
+
+.link {
+  color: #fff;
+  padding-top: 5px;
+  @extend %link;
+}
+
+.political {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #202020;
+  color: #4b4c4e;
+  height: 15px;
+  padding: 0 20px;
+  font-size: 3px;
+
+  &__img {
+    width: 15px;
+    height: 10px;
+    background-image: url(../../images/ra.png);
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.info {
+  color: #a2a2a2;
+  padding-top: 2px;
+  
+}

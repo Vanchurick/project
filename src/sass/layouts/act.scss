@@ -1,0 +1,64 @@
+.act {
+  &__title {
+    @extend %title;
+    width: 110px;
+    margin: 20px auto;
+  }
+
+  &__get {
+    font-family: $main-font;
+    color: $main-words-color;
+    font-size: $text-font-size - 1;
+    width: 60%;
+    margin: 20px auto;
+    display: flex;
+    text-align: left;
+    font-weight: 700;
+  }
+
+  &__get:before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: $main-words-color;
+    margin: 4px 10px;
+  }
+
+  &__button {
+    @extend %button;
+    margin: 20px auto;
+    font-size: $text-font-size - 3;
+  }
+
+  &__postscriptum {
+    width: 200px;
+    margin: 20px auto;
+
+    .act__title--second {
+      @extend %title;     
+    }
+  }
+}
+
+.act__conclusion {
+  font-size: $text-font-size;
+  color: $main-words-color;
+  margin: 20px 0;
+
+}
+
+.act__conclusion--right {
+  margin-left: auto;
+  width: 100px;
+}
+
+.act__main-words {
+  font-weight: 700;
+  color: $main-words-color;
+}
+
+.act__main-words--orange {
+  color: $button-color;
+  font-weight: 700;
+}

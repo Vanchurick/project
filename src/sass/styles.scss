@@ -2,9 +2,12 @@
    Import partials below
 */
 @import './normalize';
-@import './base';
 @import './variables';
+@import './base';
 @import './placeholders';
 
 @import './layouts/footer';
 @import './layouts/header';
+@import './layouts/what-is-video-course';
+@import './layouts/bonuse';
+@import './layouts/important.scss'

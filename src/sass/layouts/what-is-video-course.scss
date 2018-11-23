@@ -1,0 +1,136 @@
+.videocourse {
+  text-align: center;
+  margin-top: 20px;
+
+  &__title {
+    @extend %title;
+  }
+
+  &__question {
+    font-family: $main-font;
+    color: $main-words-color;
+    font-size: $text-font-size - 1;
+    width: 60%;
+    margin: 20px auto;
+    display: flex;
+    text-align: left;
+    font-weight: 700;
+  }
+
+  &__question:before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: $main-words-color;
+    margin: 4px 10px;
+  }
+
+  &__about {
+    text-align: left;
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  &__about p {
+    font-family: $main-font;
+    font-size: $text-font-size;
+  }
+}
+
+.secondary-title {
+  @extend %secondary-title;
+  width: 70%; 
+  margin: 15px 0;
+
+  &--black-font {
+    @extend %secondary-title;
+    color: $main-words-color;
+    width: 80%;
+    margin: 20px auto;
+  }
+ 
+  .background-title {
+    background: $main-words-color;
+    line-height: 1.5;
+  }
+}
+
+.vertical-number {
+  width: 30px;
+  height: 12px;
+  transform-origin: center center;
+  transform: rotate(270deg);
+  margin-top: 10px;
+  background-color: $button-color;
+  color: $main-logo-color;
+  font-family: $main-font;
+  font-size: $text-font-size;
+}
+
+.get-list {
+  list-style: none;
+}
+
+.get-list__item {
+  display: flex;
+  width: 250px;
+  margin: 20px auto;
+  justify-content: center;
+
+  &-about {
+    text-align: left;
+    width: 180px;
+  }
+}
+
+.main-words {
+  font-weight: 700;
+  font-size: $text-font-size;
+  color: $main-words-color;
+  margin-bottom: 10px;
+}
+
+.notmain-words {
+  font-size: $text-font-size;
+}
+
+.price-today {
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  margin: 20px auto;
+
+  .about-price {
+    width: 100px;
+    text-align: left;
+    align-self: end;
+    margin-right: 10px;
+  }
+}
+
+.background-title--blue {
+  background: $mark-color;
+  color: $main-words-color;
+  font-size: $text-font-size + 2;
+
+}
+
+.old-price {
+  font-size: $text-font-size + 2;
+  color: #3c3b40;
+  text-decoration: line-through;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.new-price {
+  font-weight: 900;
+  font-size: $text-font-size + 2;
+  text-transform: uppercase;
+}
+
+.big-price {
+  font-size: $text-font-size * 2.5;
+  
+}

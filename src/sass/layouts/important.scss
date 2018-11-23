@@ -1,0 +1,91 @@
+.important {
+  &__title {
+    @extend %title;
+    width: 100px;
+    margin: 20px auto;
+    text-align: center;
+    
+  }
+
+  &__price {
+    background-color: $header-footer;
+    width: 245px;
+    height: 190px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__present {
+    font-weight: 700;
+    font-size: $text-font-size;
+    width: 200px;
+    margin: 20px auto;
+  }
+
+  &__purpose {
+    font-size: $text-font-size;
+    width: 200px;
+    margin: 0 auto;
+  }
+  
+  &__but {
+    font-size: $text-font-size;
+    width: 200px;
+    margin: 20px auto;
+    color: $button-color;
+    font-weight: 700;
+  }
+
+  &__button {
+    @extend %button;
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+    font-size: $text-font-size - 3;
+  }
+}
+
+.actual-price {
+  display: flex;
+  align-items: center;
+  color: $main-logo-color;
+  font-size: $text-font-size;
+  margin-bottom: 10px;
+}
+
+.price-title {
+  width: 60px;
+  line-height: 15px;
+}
+
+.line {
+  width: 30px;
+  height: 1px;
+  background-color: $main-logo-color;
+  margin: 10px;
+}
+
+.price-title--background-aqua {
+  background-color: $mark-color; 
+  font-size: $text-font-size;
+  line-height: 10px;
+  font-weight: 700;
+
+}
+
+.today-price {
+  display: flex;
+  
+}
+
+.this-is-price {
+  font-size: $title-font-size;
+  color: $main-logo-color;
+}
+
+.price-box {
+  color: $main-logo-color;
+}

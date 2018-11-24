@@ -1,4 +1,81 @@
-.bg-heading{
-  color: $main-logo-color;
+.block-one {
+  width: 320px;
   font-family: $main-font;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.background {
+  color: $main-logo-color;
+  font-size: 15px;
+  display: block;
+  width: 161px;
+  height: 48px;
+  margin: 0 auto;
+  text-transform: uppercase; 
+  letter-spacing: 1px;
+  line-height: 26px;
+  padding-top: 20px;
+  margin-bottom: 35px;
+}
+
+.background-item {
+  color: $main-logo-color;
+  font-size: 9px;
+  display: block;
+  width: 173px;
+  height: 29px;
+  margin: 0 auto;
+} 
+
+.background-item::first-letter {
+  text-transform: capitalize;
+}
+
+.capital-letter {
+  text-transform: uppercase;
+}
+
+.backgroundg-middel {
+  color: $main-logo-color;
+  text-transform: uppercase;
+  font-size: 80px;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 25px;
+}
+
+.background-target {
+  color: $main-logo-color;
+  font-size: 9px;
+  font-weight: 400;
+  line-height: 13px;
+  text-transform: uppercase;
+  display: block;
+  width: 245px;
+  height: 35px;
+  margin: 0 auto;
+  padding: 0 15px;
+  letter-spacing: 0.3px;
+  margin-top: 30px;
+}
+
+.attitude{
+  color: $text-color;
+  font-size: 9px;
+  font-weight: 400;
+  line-height: 13px;
+  display: block;
+  width: 223px;
+  height: 21px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.pay-click {
+  @extend %button;
+  margin: 0 auto;
 }

@@ -1,0 +1,102 @@
+.block-two{
+    width: 320px;
+    font-family: $main-font;
+    margin: 0 auto;
+}
+.description-career {
+    color: $main-words-color;
+    font-size: 9px;
+    font-weight: 500;
+    line-height: 13px;
+    display: block;
+    width: 282px;
+    height: 48px;
+    margin: 0 auto;
+    margin-top: 40px;
+    
+  }
+  .description-career::first-letter{
+    text-transform: uppercase;
+  }
+
+  .laptop {
+    text-align: center; 
+    margin-bottom: 25px;
+  }
+
+  .propose {
+    color: $main-words-color;
+    text-transform: uppercase;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .propose-item{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 9px;
+    font-weight: 700;
+  }
+  
+  .propose{
+    display: block;
+    width: 173px;
+    height: 29px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-size: 14px;
+    @extend %title;
+    margin-bottom: 35px;
+    font-weight: 700;
+  }
+  .marker-black {
+    background-color:$main-words-color;
+    color: $main-logo-color;
+  }
+  
+  .propose-list-top{
+    font-size: 9px;
+    text-transform: uppercase;
+  }
+  
+  .propose-list-top {
+    display: block;
+    width: 252px;
+    margin: 0 auto;
+  }
+  
+  .list-block {
+    display: block;
+    width: 252px;
+    margin: 0 auto;
+    list-style: square outside;
+  }
+  
+  .list-block-item{
+    font-size: 9px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    line-height: 13px;
+  }
+ 
+  .propose-footter {
+   display: block;
+   width: 187px;
+   height: 45px;
+   margin: 0 auto;
+   font-size: 9px;
+   color:$button-color;
+  } 
+
+  .capital-letter {
+    text-transform: uppercase;
+  }
+
+  .weight {
+   font-weight: 700;
+
+  }
+
+  .marker {
+    background-color: $main-words-color ;
+  }

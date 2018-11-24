@@ -6,4 +6,56 @@
         @extend %title;
         text-align: center;
     }
+
+    &__main-text {
+        font-family: $main-font;
+        color: $main-words-color;
+        font-size: $text-font-size - 1;
+        display: flex;
+        margin: 20px auto;
+        width: 200px;
+        text-align: left;
+        font-weight: 700;
+    }
+
+    &__main-text:before {
+        content: "";
+        display: block;
+        margin: 4px 10px;
+        background-color: $main-words-color;
+        width: 30px;
+        height: 3px;
+    }
+
+    &__span {
+        background-color: $mark-color;
+    }
+}
+
+    .alex_lushchenko-img {
+        height: 171px;
+        width: 193px;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+
+    .alex-cv {
+        width: 200px;
+        text-align: left;
+        margin: 0 auto;
+    }
+
+    .list-item {
+        margin: 13px auto;
+    }
+
+    .list-item__title {
+        text-transform: uppercase;
+        font-size: 9pt;
+        font-weight: bold;
+    }
+
+.list-item__text {
+    font-family: $main-font;
+    font-size: $text-font-size;
 }

@@ -1,0 +1,79 @@
+.study-goit {
+    text-align: center;
+    margin-top: 20px;
+
+    &__main-title {
+        @extend %title;
+        text-align: left;
+    }
+
+    &__biggest-university {
+    text-align: left;
+    width: 200px;
+    margin: 0 auto;
+    }
+
+    &__biggest-university p {
+    font-family: $main-font;
+    font-size: $text-font-size;
+    }
+
+    &__number-one {
+    font-family: $main-font;
+    color: $main-words-color;
+    font-size: $text-font-size - 1;
+    display: flex;
+    margin: 20px auto;
+    width: 200px;
+    text-align: left;
+    font-weight: 700;
+    }
+
+    &__number-one:before {
+        content: "";
+        display: block;
+        margin: 4px 10px;
+        background-color: $main-words-color;
+        width: 30px;
+        height: 3px;
+    }
+}
+
+.title-black--span {
+    font-family: $main-font;
+    color: white;
+    background-color: black;
+    font-size: 8.23pt;
+}
+
+.box-title {
+    font-family: $main-font;
+    font-size: $text-font-size;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: black;
+    text-align: left;
+    width: 200px; 
+    margin: 15px 0;
+}
+
+.goforit {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: right top;
+    width: 62.5%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.undp {
+    background-image: url('..../images/undp.png');  
+}
+
+.box-text {
+    font-size: $text-font-size;
+    text-align: left;
+}
+
+
+

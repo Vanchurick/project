@@ -1,0 +1,9 @@
+.alex-lushchenko {
+    margin: 15px auto;
+    text-align: center;
+
+    &__main-title {
+        @extend %title;
+        text-align: center;
+    }
+}

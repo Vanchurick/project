@@ -60,15 +60,16 @@
 
 .goforit {
     position: relative;
-    background-repeat: no-repeat;
-    background-position: right top;
     width: 200px;
     height: auto;
     margin: 15px auto;
 }
 
 .undp {
-    background-image: url(.../images/undp.png);  
+    background-image: url(../../images/undp.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    transform: scale(sx[0.5, sy0.5])  
 }
 
 .box-text {

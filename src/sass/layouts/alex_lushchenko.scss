@@ -11,9 +11,9 @@
         font-family: $main-font;
         color: $main-words-color;
         font-size: $text-font-size - 1;
-        display: flex;
-        margin: 20px auto;
         width: 200px;
+        margin: 20px auto;
+        display: flex;
         text-align: left;
         font-weight: 700;
     }
@@ -21,15 +21,28 @@
     &__main-text:before {
         content: "";
         display: block;
-        margin: 4px 10px;
-        background-color: $main-words-color;
         width: 30px;
         height: 3px;
+        background-color: $main-words-color;
+        margin: 4px 10px;
     }
 
     &__span {
         background-color: $mark-color;
     }
+}
+
+.alex-wrapper {
+    display: flex;
+}
+
+.wrapper-wrapper:before {
+        content: "";
+        display: block;
+        margin: 4px 10px;
+        background-color: $main-words-color;
+        width: 30px;
+        height: 3px;
 }
 
     .alex_lushchenko-img {

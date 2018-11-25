@@ -1,7 +1,7 @@
 .study-goit {
     text-align: center;
     margin-top: 20px;
-    margin: 20 auto;
+    margin: 20px auto;
 
     &__main-title {
         @extend %title;
@@ -40,11 +40,18 @@
     }
 }
 
-.title-black--span {
+.title-black {
+    width: 200px;
+    margin: 13px auto;
+    text-align: left;
+
+    &--span {
     font-family: $main-font;
     color: white;
     background-color: black;
     font-size: 8.23pt;
+    text-align: left;
+    }
 }
 
 .box-title {
@@ -68,13 +75,26 @@
 .undp {
     background-image: url(../../images/undp.png);
     background-repeat: no-repeat;
-    background-position: right top;
-    transform: scale(sx[0.5, sy0.5])  
+    background-position-x: right;
+    overflow: overlay;
+}
+
+.education-it {
+    background-image: url(../../images/education-it.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+
+.it-awards {
+    background-image: url(../../images/it-awards.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
 }
 
 .box-text {
     font-size: $text-font-size;
     text-align: left;
+    width: 200px;
 
     &__span {
         font-weight: bold;

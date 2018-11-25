@@ -13,8 +13,7 @@ margin: 16px auto;
         display: flex;
         margin: 20px auto;
         width: 200px;
-        text-align: left;
-        font-weight: 700;
+        text-align: center;
     }
 
     &__the-rest:before {
@@ -26,11 +25,24 @@ margin: 16px auto;
         height: 5px;
         transform: skewX(-30deg);
     }
+
+    &__button {
+        @extend %button;
+        width: 143px;
+        height: 30px;
+        background-color: $button-color;
+        font-size: 7.21pt;
+        margin: 0 auto;
+    }
+
+    &__button a {
+        color: white;
+        text-decoration: none;
+    }
 }
 
 .after-course-list {
     list-style: none;
-    margin: 30px auto;
 }
 
     .after-course-list-item {
@@ -46,7 +58,7 @@ margin: 16px auto;
     
         &__text {
             font-size: $text-font-size - 2;
-        }
+            
     }
 
     .list-item-mark {

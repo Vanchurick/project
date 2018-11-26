@@ -6,26 +6,34 @@
     @extend %title;
 
     @media (min-width:480px) {
-      font-size: 18px;
+      font-size: $text-font-size + 8;
     }
+
+   
   }
 
   &__question {
     font-family: $main-font;
     color: $main-words-color;
     font-size: $text-font-size - 1;
-    width: 200px;
+    width: 170px;
     margin: 20px auto;
     display: flex;
     text-align: left;
     font-weight: 700;
+
+    @media (min-width:480px) {
+      font-size: $text-font-size + 4;
+      width: 230px;
+    
+    }
   }
 
   &__question:before {
     content: "";
     display: block;
-    width: 30px;
-    height: 3px;
+    min-width: 20px;
+    height: 2px;
     background-color: $main-words-color;
     margin: 4px 10px;
   }
@@ -34,11 +42,20 @@
     text-align: left;
     width: 200px;
     margin: 0 auto;
+
+    @media (min-width:480px) {
+      width: 255px;
+    }
   }
 
   &__about p {
     font-family: $main-font;
     font-size: $text-font-size;
+
+    @media (min-width:480px) {
+      font-size: $text-font-size + 3
+    }
+    
   }
 }
 
@@ -46,6 +63,10 @@
   @extend %secondary-title;
   width: 200px; 
   margin: 15px 0;
+
+  @media (min-width:480px) {
+    font-size: $text-font-size + 3
+  }
   
 
   &--black-font {
@@ -53,6 +74,11 @@
     color: $main-words-color;
     width: 250px;
     margin: 20px auto;
+
+    @media (min-width:480px) {
+      font-size: $text-font-size + 3;
+      width: 315px;
+    }
   }
  
   .background-title {
@@ -71,11 +97,20 @@
   color: $main-logo-color;
   font-family: $main-font;
   font-size: $text-font-size;
+
+  @media (min-width:480px) {
+    width: 40px;
+    height: 13px;
+    font-size: $text-font-size + 3;
+    margin-top: 15px;
+  
+  }
 }
 
 .get-list {
   list-style: none;
-  
+
+ 
 }
 
 .get-list__item {
@@ -84,10 +119,23 @@
   margin: 20px auto;
   justify-content: center;
 
+  @media (min-width:480px) {
+    width: 260px;
+  }
+
   &-about {
     text-align: left;
     width: 180px;
+
+    @media (min-width:480px) {
+      width: 240px;
+    }
+
+    
   }
+
+ 
+  
 }
 
 .main-words {
@@ -95,10 +143,18 @@
   font-size: $text-font-size;
   color: $main-words-color;
   margin-bottom: 10px;
+
+  @media (min-width:480px) {
+    font-size: $text-font-size + 3;
+  }
 }
 
 .notmain-words {
   font-size: $text-font-size;
+
+  @media (min-width:480px) {
+    font-size: $text-font-size + 3;
+  }
 }
 
 .price-today {
@@ -112,6 +168,11 @@
     text-align: left;
     align-self: end;
     margin-right: 10px;
+
+    @media (min-width:480px) {
+      width: 150px;
+    }
+    
   }
 }
 
@@ -119,6 +180,10 @@
   background: $mark-color;
   color: $main-words-color;
   font-size: $text-font-size + 2;
+
+  @media (min-width:480px) {
+    font-size: $text-font-size + 8;
+  }
 
 }
 
@@ -128,15 +193,27 @@
   text-decoration: line-through;
   font-weight: 700;
   margin-bottom: 10px;
+
+  @media (min-width:480px) {
+    font-size: $text-font-size + 7;
+  }
 }
 
 .new-price {
   font-weight: 900;
   font-size: $text-font-size + 2;
   text-transform: uppercase;
+
+  @media (min-width:480px) {
+    font-size: $text-font-size * 2;
+  }
 }
 
 .big-price {
   font-size: $text-font-size * 2.5;
+
+  @media (min-width:480px) {
+    font-size: $title-font-size + 6;
+  }
   
 }

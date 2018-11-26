@@ -1,13 +1,27 @@
 footer {
   height: 85px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width:480px) {
+    height: 130px;
+  }
 }
 
 .footer {
   display: flex;
   justify-content: space-evenly;
   background-color: #181c27;
-  font-size: 4px;
+  font-size: $text-font-size / 2;
   padding: 10px 0;
+  flex-grow: 1;
+
+  @media (min-width:480px) {
+    font-size: $text-font-size - 4;
+    padding-top: 40px;
+  }
+
+  
   
 
   &__logo {
@@ -16,10 +30,16 @@ footer {
     background-image: url(../../images/logo_goit.png);
     background-position: center;
     background-size: cover;
+
+    @media (min-width:480px) {
+      min-width: 41px;
+      height: 14px;
+      background-image: url(../../images/logo_goit480.png);
+    }
   }
 
   &__contacts {
-    color: #fff;
+    color: $main-logo-color;
     width: 15%;
 
     div {
@@ -40,7 +60,13 @@ footer {
     height: 15px;
     background-color: transparent;
     border: 1px solid #192c45;
-    font-size: 3px;
+    font-size: $text-font-size / 3;
+
+    @media (min-width:480px) {
+      font-size: $text-font-size / 2;
+      width: 85px;
+      height: 20px;
+    }
     
   
   }

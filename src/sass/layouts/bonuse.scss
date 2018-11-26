@@ -3,6 +3,10 @@
     @extend %title;
     width: 200px;
     margin: 0 auto;
+
+    @media (min-width:480px) {
+      width: 240px;
+    }
   }
 
   &__about {
@@ -13,13 +17,18 @@
     margin: 20px auto;
     display: flex;
     text-align: left;
-    font-weight: 700;
+    font-weight: 400;
+
+    @media (min-width:480px) {
+      font-size: $text-font-size + 3;
+      width: 250px;
+    }
   }
 
   &__about:before {
     content: "";
     display: block;
-    width: 30px;
+    min-width: 20px;
     height: 3px;
     background-color: $main-words-color;
     margin: 4px 10px;
@@ -30,6 +39,10 @@
     width: 180px;
     margin: 20px auto;
 
+    @media (min-width:480px) {
+      width: 270px;
+    }
+
     .mark-list-item {
       margin-right: 10px;
     }
@@ -37,6 +50,10 @@
     .number {
       font-weight: 900;
       font-size: $title-font-size / 2;
+
+      @media (min-width:480px) {
+        font-size: $title-font-size - 5;
+      }
     }
 
     .mark {
@@ -44,6 +61,11 @@
       height: 5px;
       background-color: $mark-color;
       margin: 0 5px 0 auto;
+
+      @media (min-width:480px) {
+        width: 10px;
+        height: 10px;
+      }
     }
 
 
@@ -53,16 +75,28 @@
 .background-title--black {
   background: $main-words-color;
   color: $main-logo-color;
+
+  @media (min-width:480px) {
+    font-size: $text-font-size + 8;
+  }
 }
 
 .about-item__title {
   @extend %secondary-title;
   color: $main-words-color;
   margin-bottom: 10px;
+
+  @media (min-width:480px) {
+    font-size: $text-font-size + 3;
+  }
 }
 
 .about-item__text {
   font-size: $text-font-size - 2;
+
+  @media (min-width:480px) {
+    font-size: $text-font-size + 2;
+  }
 }
 
 .form {
@@ -73,10 +107,19 @@
   padding-top: 30px;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
 
+  @media (min-width:480px) {
+    width: 370px;
+    height: 340px;
+  }
+
   &__input-title {
     font-size: $text-font-size / 2;
     font-weight: 700;
     color: $text-color;
+
+    @media (min-width:480px) {
+      font-size: $text-font-size - 2;
+    }
   }
 
   &__input {
@@ -93,6 +136,10 @@
     font-weight: 900;
     font-size: $text-font-size - 3;
     color: $main-words-color;
+
+    @media (min-width:480px) {
+      font-size: $text-font-size;
+    }
   }
 
   &__button {
@@ -100,7 +147,19 @@
     width: 115px;
     height: 20px;
     font-size: $text-font-size / 2;
+
+    @media (min-width:480px) {
+      margin-top: 20px;
+      font-size: $text-font-size - 2;
+      width: 170px;
+      height: 35px;
+    }
     
   }
 }
 
+.black {
+  @media (min-width:480px) {
+    font-size: $text-font-size + 2;
+  }
+}

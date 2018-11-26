@@ -2,14 +2,26 @@
   text-align: center;
   margin-top: 20px;
 
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px;
+  }
+
+  &__head {
+    @media (min-width: 768px) {
+      width: 50%;
+    }
+  }
+
   &__title {
     @extend %title;
 
     @media (min-width:480px) {
       font-size: $text-font-size + 8;
-    }
-
-   
+    } 
   }
 
   &__question {
@@ -38,6 +50,27 @@
     margin: 4px 10px;
   }
 
+  &__img {
+    @media (min-width: 768px) {
+      order: -1;
+      width: 270px;
+      height: 170px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;        
+    }
+
+    &--nomobile {
+      display: none;
+      @media (min-width: 768px) {
+        display: flex;
+        order: 0;
+        height: auto;
+      }
+    }
+  }
+
   &__about {
     text-align: left;
     width: 200px;
@@ -56,6 +89,12 @@
       font-size: $text-font-size + 3
     }
     
+  }
+
+  &__get {
+    @media (min-width: 768px) {
+      display: flex;
+    }
   }
 }
 
@@ -78,6 +117,10 @@
     @media (min-width:480px) {
       font-size: $text-font-size + 3;
       width: 315px;
+    }
+
+    @media (min-width: 768px) {
+      width: 140px;
     }
   }
  
@@ -109,7 +152,13 @@
 
 .get-list {
   list-style: none;
-
+  
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    
+  }
  
 }
 
@@ -121,6 +170,10 @@
 
   @media (min-width:480px) {
     width: 260px;
+  }
+
+  @media (min-width: 768px) {
+    margin: 0;
   }
 
   &-about {

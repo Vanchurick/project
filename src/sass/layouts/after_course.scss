@@ -45,34 +45,34 @@ margin: 16px auto;
     list-style: none;
 }
 
-    .after-course-list-item {
-        display: flex;
-        width: 180px;
-        margin: 20px auto;
+.after-course-list-item {
+  display: flex;
+  width: 180px;
+  margin: 20px auto;
 
-        &__title {
-            @extend %secondary-title;
-            color: $main-words-color;
-            margin-bottom: 10px;
-        }
+  &__title {
+    @extend %secondary-title;
+    color: $main-words-color;
+    margin-bottom: 10px;
+  }
     
-        &__text {
-            font-size: $text-font-size - 2;
-            
-    }
+  &__text {
+    font-size: $text-font-size - 2;
+  }
+}
 
-    .list-item-mark {
-        margin-right: 10px;
-    }
+.list-item-mark {
+  margin-right: 10px;
+}
 
-    .list-item-mark-number {
-        font-weight: 900;
-        font-size: $title-font-size / 2;
-    }
+.list-item-mark-number {
+  font-weight: 900;
+  font-size: $title-font-size / 2;
+}
 
-    .list-item-mark-mark {
-        width: 5px;
-        height: 5px;
-        background-color: $mark-color;
-        margin: 0 5px 0 auto;
-    }
+.list-item-mark-mark {
+  width: 5px;
+  height: 5px;
+  background-color: $mark-color;
+  margin: 0 5px 0 auto;
+}

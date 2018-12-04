@@ -12,38 +12,50 @@
         color: $main-words-color;
         font-size: $text-font-size - 1;
         width: 200px;
-        margin: 20px auto;
-        display: flex;
+        margin: 0 auto;
         text-align: left;
         font-weight: 700;
     }
 
-    &__main-text:before {
-        content: "";
-        display: block;
-        width: 30px;
-        height: 3px;
-        background-color: $main-words-color;
-        margin: 4px 10px;
-    }
+    // &__main-text:before {
+    //     content: "";
+    //     display: block;
+    //     width: 30px;
+    //     height: 3px;
+    //     background-color: $main-words-color;
+    //     margin: 4px 10px;
+    // }
 
     &__span {
         background-color: $mark-color;
+        display: flex;
     }
 }
 
+
+
 .alex-wrapper {
     display: flex;
-}
+    justify-content: center;
+    margin: 20px auto;
 
-.wrapper-wrapper:before {
-        content: "";
-        display: block;
-        margin: 4px 10px;
-        background-color: $main-words-color;
+    &__line {
+
         width: 30px;
         height: 3px;
+        background-color: black;
+        margin: 4px 10px;
+    }
 }
+
+// .wrapper-wrapper:before {
+//         content: "";
+//         display: block;
+//         margin: 4px 10px;
+//         background-color: $main-words-color;
+//         width: 30px;
+//         height: 3px;
+// }
 
     .alex_lushchenko-img {
         height: 171px;

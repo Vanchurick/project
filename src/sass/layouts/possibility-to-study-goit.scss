@@ -8,17 +8,31 @@
         text-align: left;
         margin: 0 auto;
         width: 280px;
+        font-size: $title-font-size - 18;
+
+        @media (min-width:480px) {
+            font-size: $title-font-size - 12;
+            width: 420px;
+        }
     }
 
     &__biggest-university {
     text-align: left;
     width: 200px;
     margin: 15px auto;
+
+    @media (min-width:480px) {
+        width: 300px;
+        }
     }
 
     &__biggest-university p {
     font-family: $main-font;
-    font-size: $text-font-size;
+    font-size: $text-font-size - 1;
+
+    @media (min-width:480px){
+        font-size: $text-font-size + 3;
+        }
     }
 
     &__number-one {
@@ -62,13 +76,18 @@
 
 .box-title {
     font-family: $main-font;
-    font-size: $text-font-size;
+    font-size: $text-font-size - 1;
     font-weight: 900;
     text-transform: uppercase;
     color: black;
     text-align: left;
     width: 200px; 
     margin-bottom: 15px;
+
+    @media (min-width: 480px) {
+    font-size: $text-font-size + 3.5;
+    width: 300px;
+    }
 }
 
 .goforit {
@@ -82,6 +101,8 @@
     background-image: url(../../images/undp.png);
     background-repeat: no-repeat;
     background-position-x: right;
+    background-position-y: 
+    
     overflow: overlay;
 }
 
@@ -98,12 +119,17 @@
 }
 
 .box-text {
-    font-size: $text-font-size;
+    font-size: $text-font-size - 1;
     text-align: left;
     width: 170px;
 
     &__span {
         font-weight: bold;
+    }
+
+    @media (min-width: 480px) {
+        font-size: $text-font-size + 3.5;
+        width: 255px;
     }
 }
 

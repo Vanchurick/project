@@ -5,10 +5,30 @@
     margin: 20px auto;
     text-align: center;
 
-    @media (min-width:480px) {
+    @media (min-width: 480px) {
       font-size: $text-font-size + 8;
     }
-    
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__title--768px {
+    display: none;
+
+    @media (min-width: 768px) {
+      display: block;
+      width: 150px;
+      margin: 0 auto;
+      font-size: $title-font-size - 3;
+    }
+  }
+
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
   }
 
   &__price {
@@ -21,9 +41,15 @@
     justify-content: center;
     align-items: center;
 
-    @media (min-width:480px) {
+    @media (min-width: 480px) {
       width: 370px;
       height: 270px;
+    }
+
+    @media (min-width: 768px) {
+      width: 260px;
+      height: 190px;
+      margin: 0;
     }
   }
 
@@ -33,10 +59,18 @@
     width: 200px;
     margin: 20px auto;
 
-    @media (min-width:480px) {
+    @media (min-width: 480px) {
       font-size: $text-font-size + 4;
       width: 260px;
     }
+
+    @media (min-width: 768px) {
+      font-size: $text-font-size - 1;
+      width: 160px;
+      
+    }
+
+    
   }
 
   &__present--regular {
@@ -54,11 +88,19 @@
     display: block;
     font-size: $text-font-size - 3;
 
-    @media (min-width:480px) {
+    @media (min-width: 480px) {
       width: 295px;
       height: 40px;
       font-size: $text-font-size;
     }
+
+    @media (min-width: 768px) {
+      width: 200px;
+      height: 28px;
+      font-size: $text-font-size - 3;
+      
+    }
+
   }
 }
 
@@ -69,21 +111,28 @@
   font-size: $text-font-size;
   margin-bottom: 10px;
 
-  @media (min-width:480px) {
+  @media (min-width: 480px) {
     font-size: $text-font-size + 3;
-    
   }
 
- 
+  @media (min-width: 768px) {
+    font-size: $text-font-size;
+    width: 140px;
+  }
 }
 
 .price-title {
   width: 60px;
   line-height: 15px;
 
-  @media (min-width:480px) {
+  @media (min-width: 480px) {
     font-size: $text-font-size + 3;
     width: 90px;
+  }
+
+  @media (min-width: 768px) {
+    font-size: $text-font-size - 1;
+    width: 60px;
   }
 }
 
@@ -95,29 +144,39 @@
 }
 
 .price-title--background-aqua {
-  background-color: $mark-color; 
+  background-color: $mark-color;
   font-size: $text-font-size;
   line-height: 10px;
   font-weight: 700;
 
-  @media (min-width:480px) {
+  @media (min-width: 480px) {
     font-size: $text-font-size + 3;
   }
 
+  @media (min-width: 768px) {
+    font-size: $text-font-size - 1;
+  }
 }
 
 .today-price {
   display: flex;
   align-items: center;
-  
+
+  @media (min-width: 768px) {
+    width: 140px;
+  }
 }
 
 .this-is-price {
   font-size: $title-font-size;
   color: $main-logo-color;
 
-  @media (min-width:480px) {
+  @media (min-width: 480px) {
     font-size: $text-font-size * 4;
+  }
+
+  @media (min-width: 768px) {
+    font-size: $title-font-size - 3;
   }
 }
 

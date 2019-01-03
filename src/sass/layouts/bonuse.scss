@@ -7,7 +7,19 @@
     @media (min-width:480px) {
       width: 240px;
     }
+
+   
+      
+    
   }
+    
+  @media (min-width:768px) {
+    display: flex;
+    padding: 50px;
+          
+  }
+    
+  
 
   &__about {
     font-family: $main-font;
@@ -22,6 +34,11 @@
     @media (min-width:480px) {
       font-size: $text-font-size + 3;
       width: 250px;
+    }
+
+    @media (min-width:768px) {
+      font-size: $text-font-size - 1;
+            
     }
   }
 
@@ -79,6 +96,11 @@
   @media (min-width:480px) {
     font-size: $text-font-size + 8;
   }
+
+  @media (min-width:768px) {
+    font-size: $title-font-size - 3;
+          
+  }
 }
 
 .about-item__title {
@@ -89,6 +111,11 @@
   @media (min-width:480px) {
     font-size: $text-font-size + 3;
   }
+
+  @media (min-width:768px) {
+    font-size: $text-font-size - 1;
+          
+  }
 }
 
 .about-item__text {
@@ -96,6 +123,11 @@
 
   @media (min-width:480px) {
     font-size: $text-font-size + 2;
+  }
+
+  @media (min-width:768px) {
+    font-size: $text-font-size - 1;
+          
   }
 }
 
@@ -110,6 +142,12 @@
   @media (min-width:480px) {
     width: 370px;
     height: 340px;
+  }
+
+  @media (min-width:768px) {
+    width: 310px;
+    height: 290px;
+          
   }
 
   &__input-title {
@@ -161,5 +199,10 @@
 .black {
   @media (min-width:480px) {
     font-size: $text-font-size + 2;
+  }
+
+  @media (min-width:768px) {
+    font-size: $text-font-size - 1;
+          
   }
 }

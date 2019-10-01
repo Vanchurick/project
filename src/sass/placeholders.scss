@@ -1,39 +1,50 @@
 %title {
   font-family: $main-font;
-  font-size: $title-font-size / 2;
+  font-size: $mobile-title-font-size;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+%text {
+  font-family: $main-font;
+  font-size: $mobile-text-font-size;
+  font-weight: 400;
+}
+
+%main-phrase {
+  font-family: $main-font;
+  font-size: $mobile-text-font-size;
   font-weight: 900;
   text-transform: uppercase;
-  line-height: 1.5;
 }
 
-%secondary-title {
-  font-family: $main-font;
-  font-size: $text-font-size;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: $main-logo-color;
-  text-align: left;
-  
+%mark-blue {
+  background-color: $light-blue;
+  color: $black;
 }
 
-%link {
-  text-decoration: none;
-  font-family: $main-font;
-  font-weight: 700;
+%mark-black {
+  background-color: $black;
+  color: $white;
 }
 
 %button {
-  width: 145px;
+  width: 140px;
   height: 30px;
-  background-color: $button-color;
+  background-color: $orange;
   font-family: $main-font;
-  font-weight: 700;
+  font-weight: 900;
   border: none;
-  font-size: $text-font-size;
-  color: $main-logo-color;
+  font-size: $mobile-text-font-size;
+  color: $white;
   text-transform: uppercase;
-  display: block;
   cursor: pointer;
   outline: none;
-  text-decoration: none;
+}
+
+%button:hover {
+  background-color: $white;
+  color: $orange;
+  font-size: $mobile-text-font-size + 2px;
+  box-sizing: 0 0 5px 5px $orange;
 }

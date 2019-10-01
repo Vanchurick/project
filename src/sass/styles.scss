@@ -1,22 +1,10 @@
 /*
    Import partials below
 */
-@import './normalize';
-@import './variables';
-@import './base';
-@import './placeholders';
+@import "./normalize";
+@import "./fonts.scss";
+@import "./variables";
+@import "./base";
+@import "./placeholders";
 
-@import './layouts/possibility-to-study-goit';
-@import './layouts/footer';
-@import './layouts/header';
-@import './layouts/block-one';
-@import './layouts/block-two';
-@import './layouts/block-three';
-@import './layouts/alex_lushchenko';
-@import './layouts/by_the_hand';
-@import './layouts/only_now';
-@import './layouts/after_course';
-@import './layouts/what-is-video-course';
-@import './layouts/bonuse';
-@import './layouts/important';
-@import './layouts/act';
+@import "./layouts/header";

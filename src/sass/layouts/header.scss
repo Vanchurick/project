@@ -1,129 +1,33 @@
-.clearfix::after{  
-    content: " ";    
-    visibility: hidden;
-    display: block;
-    height: 0;
-    clear: both;
-} 
-
-.burger-menu {
-   width: 18px;
-   height: 11px;
-
+.header {
+  background-image: url("../../images/bg_header.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  min-width: 320px;
+  height: 415px;
+  text-align: center;
 }
 
-.burger {
-    float: right;
-    margin-bottom: 4px;
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 13px;
 }
 
-.burger:last-child {
-    margin: 0;
+.navigation_button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  width: 20px;
+  height: 15px;
+  background-image: url("../../images/burg_menu.png");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.top {
-    display: block;
-    width: 17px;
-    height: 2px;
-    background-color: #ffffff;
-} 
-
-.middle {
-    display: block;
-    width: 10px;
-    height: 2px;
-    background-color: #ffffff;
-}
-
-.bottom{
-    display: block;
-    width: 23px;
-    height: 2px;
-    background-color: #ffffff;
-}
-
-.logo {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-}
-
-.logo a {
-    animation: logo-appear 3.5s linear;
-
-  }
-
-@keyframes logo-appear {
-    0% {
-      transform: translateY(-50px);
-      opacity: 0;
-    }
-  
-    50% {
-      transform: translateY(0);
-      opacity: 1;
-      transform: rotate(0);
-
-    }
-  
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-
-.nav {
-       padding: 10px 10px;
-       background-color: $header-footer;
-       background-position: center;
-       position: relative;
-       height: 26.5em;
-} 
-
-.main-menu {
-     list-style: none;
-}
-
-.menu-item {
-     position: relative;
-} 
-
-.menu-item > a,
-.subitem > a{
-     display: block;
-     color: #424242; 
-     background-color: #fff;
-     text-decoration: none;
-}
-
-.menu-item > a:hover,
-.subitem > a:hover{
-     background: $mark-color;
-     color: #ffffff;
-}
-
-.submenu{
-    display: block;
-    width: 280px;
-    display: none;
-    position: absolute;
-    top: 100%;
-    right: 70%;
-    list-style: none;
-}
-
-.subitem a{
-    display: block;
-    text-align: center;
-    background-color: #121d2e;
-    height: 40px;
-    padding-top: 10px;
-    text-transform: capitalize;
-    font-size: 16px;
-    color: #fff;
-    font-family: $main-font;
-
-}
-
-.menu-item:hover > .submenu{
-    display: block;
+.header-info__title {
+  @extend %title;
+  color: $white;
+  font-size: 20px;
+  width: 50%;
+  margin: 0 auto;
 }

@@ -1,16 +1,16 @@
 .header {
-  background-image: url("../../images/bg_header.png");
+  background: url("../../images/bg_header.png") $dark-blue;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   min-width: 320px;
-  height: 415px;
-  text-align: center;
+  height: 410px;
 }
 
 .navigation {
   display: flex;
   justify-content: space-between;
-  padding: 16px 13px;
+  padding: 5px 13px 10px;
 }
 
 .navigation_button {
@@ -30,4 +30,56 @@
   font-size: 20px;
   width: 50%;
   margin: 0 auto;
+  line-height: 26px;
+}
+
+.header-info__start {
+  @extend %text;
+  color: $white;
+  font-weight: 700;
+  width: 75%;
+  margin: 25px auto;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+}
+
+.header-info__start::before {
+  content: "<";
+  font-size: 15px;
+  color: $light-blue;
+  position: absolute;
+  top: 0px;
+  left: -15px;
+}
+
+.header-info__start::after {
+  content: "/>";
+  font-size: 15px;
+  color: $light-blue;
+  position: absolute;
+  bottom: 0px;
+  right: -15px;
+}
+
+.header-info__open {
+  @extend %text;
+  color: $white;
+  text-transform: uppercase;
+  font-weight: 900;
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.header-info__mathematic {
+  @extend %text;
+  color: $light-gray;
+  width: 75%;
+  margin: 5px auto;
+}
+
+.header-button {
+  @extend %button;
+  margin: 25px auto;
 }

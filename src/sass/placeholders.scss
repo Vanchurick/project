@@ -9,6 +9,7 @@
   font-family: $main-font;
   font-size: $mobile-text-font-size;
   font-weight: 400;
+  line-height: 13px;
 }
 
 %main-phrase {
@@ -29,8 +30,9 @@
 }
 
 %button {
-  width: 140px;
-  height: 30px;
+  display: block;
+  width: 145px;
+  height: 35px;
   background-color: $orange;
   font-family: $main-font;
   font-weight: 900;

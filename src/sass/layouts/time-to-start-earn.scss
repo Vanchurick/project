@@ -14,6 +14,8 @@
       color: $orange;
       text-align: center;
       font-weight: 700;
+      margin: 20px auto 0;
+      width: 60%;
     }
   }
 
@@ -63,6 +65,7 @@
       @extend %text;
       margin-top: 10px;
       position: relative;
+      letter-spacing: 1px;
 
       p {
         color: $gray;

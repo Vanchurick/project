@@ -1,11 +1,26 @@
+.dry-facts {
+  margin-top: 35px;
+  padding: 0 10px;
+}
+
 .dry-facts_title {
   @extend %title;
   width: 60%;
   margin: 20px auto 0;
 
+  &--first {
+    text-align: center;
+  }
+
   &--second {
-    @extend %mark-black;
-    line-height: 20px;
+    margin-top: 15px;
+    width: 60%;
+
+    span {
+      @extend %mark-black;
+      font-size: 12px;
+      line-height: 16px;
+    }
   }
 }
 
@@ -14,8 +29,9 @@
 
   &--first {
     font-weight: 900;
-    width: 50%;
-    margin: 10px auto 0;
+    width: 60%;
+    margin: 20px auto 0;
+    padding-left: 20px;
     position: relative;
 
     &::before {
@@ -25,17 +41,19 @@
       height: 2px;
       background-color: $black;
       position: absolute;
-      top: 6px;
-      left: -20px;
+      top: 7px;
+      left: -10px;
     }
   }
 
   &--second {
     font-weight: 700;
+    margin-top: 15px;
   }
 
   &--third {
     color: $gray;
+    margin-top: 5px;
 
     span {
       @extend %mark-blue;
@@ -45,8 +63,13 @@
 }
 
 .dry-facts-list {
-  padding: 20px;
+  margin-top: 30px;
+  padding: 0px 0px 0px 28px;
   list-style: none;
+}
+
+.dry-facts-item:not(:first-child) {
+  margin-top: 20px;
 }
 
 .dry-facts-item_text {
@@ -61,11 +84,11 @@
     &::before {
       content: "";
       display: block;
-      width: 7px;
-      height: 7px;
+      width: 6px;
+      height: 6px;
       background-color: $orange;
       position: absolute;
-      bottom: 0px;
+      bottom: 3px;
       left: -15px;
     }
 
@@ -83,4 +106,10 @@
     color: $gray;
     width: 80%;
   }
+}
+
+.dry-facts_image {
+  display: block;
+  margin-top: 35px;
+  // padding: 10px;
 }

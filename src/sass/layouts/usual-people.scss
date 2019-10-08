@@ -1,0 +1,119 @@
+.usual-people {
+  padding: 10px 10px;
+
+  &_title {
+    @extend %title;
+    width: 51%;
+    margin: 18px auto;
+  }
+
+  &_text {
+    @extend %main-think;
+    width: 70%;
+    margin: 10px auto;
+
+    span {
+      @extend %mark-black;
+    }
+  }
+
+  .opinion_info--name {
+    @extend %text;
+    text-transform: uppercase;
+    font-size: 3px;
+    line-height: 6px;
+    font-weight: 900;
+  }
+
+  &_opinion {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .opinion_interview {
+    display: flex;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    padding: 15px 10px 15px 15px;
+    width: 200px;
+    height: 140px;
+    margin: 25px auto 0;
+  }
+
+  .opinion_info {
+    margin-right: 15px;
+  }
+
+  .opinion_text-container {
+    overflow-y: scroll;
+    padding-right: 5px;
+  }
+
+  .opinion_text-container::-webkit-scrollbar {
+    width: 2px;
+  }
+
+  .opinion_text-container::-webkit-scrollbar-track-piece {
+    background-color: $white;
+  }
+
+  .opinion_text-container::-webkit-scrollbar-thumb {
+    background-color: $black;
+  }
+
+  .opinion_text {
+    @extend %text;
+    font-size: 3px;
+    line-height: 6px;
+  }
+
+  .opinion_navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    margin: 0 auto;
+  }
+
+  .opinion_pages {
+    display: flex;
+    align-items: baseline;
+    padding-left: 10px;
+  }
+
+  .opinion_page {
+    font-size: 4px;
+    margin: 5px 3px;
+    font-weight: 900;
+
+    &--active {
+      font-size: 9px;
+      position: relative;
+
+      &::before {
+        content: "";
+        display: block;
+        width: 13px;
+        height: 1px;
+        background-color: $black;
+        position: absolute;
+        top: 50%;
+        right: 0px;
+      }
+    }
+  }
+
+  .opinion_buttons {
+    display: flex;
+  }
+
+  .opinion_button {
+    display: block;
+    border: none;
+    width: 15px;
+    height: 15px;
+    background-color: $black;
+    @extend %text;
+    color: $white;
+    margin-left: 1px;
+    cursor: pointer;
+  }
+}

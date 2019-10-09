@@ -1,0 +1,49 @@
+.warning {
+  padding: 10px;
+
+  &_title {
+    @extend %title;
+    width: 51%;
+    margin: 5px auto;
+  }
+
+  &_text {
+    @extend %main-think;
+    width: 60%;
+    margin: 10px auto;
+  }
+
+  .warning_list {
+    list-style: none;
+    padding: 0 0 0 50px;
+    margin-top: 25px;
+
+    &-item {
+      margin-top: 10px;
+
+      &--title {
+        @extend %text;
+        text-transform: uppercase;
+        font-weight: 900;
+        position: relative;
+
+        &::before {
+          content: "";
+          display: block;
+          width: 4px;
+          height: 4px;
+          background-color: $black;
+          position: absolute;
+          top: 5px;
+          left: -11px;
+        }
+      }
+
+      &--description {
+        @extend %text;
+
+        width: 80%;
+      }
+    }
+  }
+}

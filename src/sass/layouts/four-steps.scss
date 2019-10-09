@@ -1,0 +1,58 @@
+.four-steps {
+  padding: 0 10px;
+
+  &_title {
+    @extend %title;
+    width: 50%;
+    margin: 0 auto;
+
+    span {
+      @extend %mark-black;
+    }
+  }
+
+  &_text {
+    @extend %text;
+
+    &--main {
+      @extend %main-think;
+      width: 70%;
+      margin: 0 auto;
+    }
+  }
+
+  .steps {
+    padding: 30px;
+    list-style: none;
+
+    &-item {
+      display: flex;
+      @extend %text;
+      margin-top: 10px;
+
+      &_number-container {
+        max-width: 25px;
+        max-height: 15px;
+        margin-right: 5px;
+      }
+
+      &_number {
+        font-size: 16px;
+        font-weight: 900;
+
+        &::after {
+          content: "";
+          display: block;
+          width: 5px;
+          height: 5px;
+          background-color: $light-blue;
+        }
+      }
+
+      &_title {
+        text-transform: uppercase;
+        font-weight: 900;
+      }
+    }
+  }
+}

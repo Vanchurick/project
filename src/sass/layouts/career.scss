@@ -1,0 +1,52 @@
+.career {
+  padding: 0 10px;
+  margin-top: 20px;
+
+  &_title {
+    @extend %title;
+    width: 65%;
+    margin: 0 auto;
+  }
+
+  &_image {
+    display: block;
+    margin-top: 20px;
+  }
+
+  &_text-container {
+    padding: 10px 50px;
+  }
+
+  &_text {
+    @extend %text;
+
+    &--main {
+      @extend %main-think;
+      width: 70%;
+      margin: 0 auto;
+    }
+
+    &--title {
+      text-transform: uppercase;
+      font-weight: 900;
+      position: relative;
+      margin-left: 18px;
+
+      &::before {
+        content: "";
+        display: block;
+        width: 5px;
+        height: 5px;
+        background-color: $black;
+        position: absolute;
+        left: -15px;
+        top: 3px;
+      }
+    }
+
+    &--description {
+      color: $gray;
+      margin-top: 10px;
+    }
+  }
+}

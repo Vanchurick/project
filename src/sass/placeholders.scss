@@ -70,3 +70,35 @@
     top: 7px;
   }
 }
+
+%list {
+  @extend %text;
+  counter-reset: item;
+  list-style: none;
+
+  li {
+    width: 55%;
+    margin: 15px auto;
+    position: relative;
+
+    &::before {
+      content: "[ 00" counter(item) " ]";
+
+      counter-increment: item;
+      color: $white;
+      background-color: $orange;
+      transform: rotate(270deg);
+      position: absolute;
+      left: -25px;
+      top: 10px;
+    }
+
+    p:first-child {
+      font-weight: 700;
+    }
+
+    p:last-child {
+      margin-top: 5px;
+    }
+  }
+}

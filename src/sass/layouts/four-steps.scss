@@ -18,18 +18,44 @@
     &--main {
       @extend %main-think;
       width: 70%;
-      margin: 0 auto;
+      margin: 15px auto;
+    }
+
+    &--orange {
+      color: $orange;
+      font-weight: 700;
+      width: 65%;
+      margin: 25px auto 0;
+      position: relative;
+
+      &::before {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 1px;
+        background-color: $black;
+        transform: rotate(125deg);
+        position: absolute;
+        left: -30px;
+        top: 12px;
+      }
+    }
+
+    &--black {
+      font-weight: 700;
+      width: 65%;
+      margin: 10px auto;
     }
   }
 
   .steps {
-    padding: 30px;
+    padding: 1px 55px;
     list-style: none;
 
     &-item {
       display: flex;
       @extend %text;
-      margin-top: 10px;
+      margin-top: 20px;
 
       &_number-container {
         max-width: 25px;
@@ -40,6 +66,7 @@
       &_number {
         font-size: 16px;
         font-weight: 900;
+        position: relative;
 
         &::after {
           content: "";
@@ -47,6 +74,9 @@
           width: 5px;
           height: 5px;
           background-color: $light-blue;
+          position: absolute;
+          bottom: -10px;
+          right: 5px;
         }
       }
 
@@ -54,6 +84,24 @@
         text-transform: uppercase;
         font-weight: 900;
       }
+
+      &_description {
+        margin-top: 3px;
+      }
     }
+  }
+
+  &_image {
+    display: block;
+    margin-top: 35px;
+  }
+
+  .todo {
+    @extend %list;
+  }
+
+  &_button {
+    @extend %button;
+    margin: 30px auto 0;
   }
 }

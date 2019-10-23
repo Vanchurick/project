@@ -1,0 +1,107 @@
+.videocourse {
+  padding: 0 10px;
+  margin-top: 40px;
+
+  &__title {
+    @extend %title;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  &__text {
+    @extend %text;
+
+    &--main {
+      @extend %main-think;
+      margin: 10px auto 0;
+      width: 55%;
+    }
+
+    &--list-title {
+      text-transform: uppercase;
+      font-weight: 900;
+      width: 90%;
+      margin: 30px auto 0;
+    }
+  }
+
+  &__image {
+    display: block;
+    margin-top: 23px;
+  }
+
+  &__list {
+    @extend %text;
+    list-style: none;
+
+    &--first {
+      padding: 0 50px;
+
+      li {
+        width: 80%;
+        margin-top: 15px;
+
+        p:first-child {
+          span {
+            text-transform: uppercase;
+            font-weight: 700;
+            @extend %mark-black;
+          }
+        }
+
+        p:last-child {
+          margin-top: 5px;
+          color: $gray;
+          font-weight: 700;
+        }
+      }
+    }
+
+    &--second {
+      @extend %list;
+    }
+  }
+
+  &__prices-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+  }
+
+  &__prices-text-container {
+  }
+
+  &__prices-text {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    width: 100px;
+
+    span {
+      @extend %mark-blue;
+    }
+  }
+
+  &__prices {
+    @extend %text;
+
+    .videocourse__price {
+      font-weight: 900;
+      text-transform: uppercase;
+      line-height: 25px;
+
+      &--old {
+        font-size: 11px;
+        text-decoration: line-through;
+        color: $gray;
+      }
+
+      &--new {
+        span {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+}

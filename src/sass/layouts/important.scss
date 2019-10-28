@@ -1,0 +1,96 @@
+.important {
+  padding: 1px 10px;
+
+  &__title {
+    @extend %title;
+    text-align: center;
+    margin-top: 25px;
+  }
+
+  &__prices {
+    width: 85%;
+    margin: 10px auto 0;
+    background-color: $dark-blue;
+    @extend %text;
+    font-weight: 900;
+    color: $white;
+    height: 185px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 10px;
+
+      p:first-child {
+        width: 65px;
+      }
+    }
+
+    div:last-child {
+      width: 55%;
+      justify-content: space-between;
+
+      p:first-child {
+        span {
+          color: $black;
+          background-color: $light-blue;
+        }
+      }
+      p:last-child {
+        span {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+
+  &__line {
+    width: 25px;
+    height: 1px;
+    background-color: $white;
+  }
+
+  &__text-container {
+    padding: 10px 50px;
+  }
+
+  &__text {
+    @extend %text;
+    margin-top: 10px;
+    color: $gray;
+
+    &--bold {
+      font-weight: 900;
+      color: $black;
+    }
+
+    &--orange {
+      color: $orange;
+      font-weight: 900;
+      position: relative;
+
+      &:before {
+        content: "";
+        display: inline-block;
+        height: 1px;
+        width: 20px;
+        background-color: $black;
+        transform: rotate(120deg);
+        position: absolute;
+        top: 15px;
+        left: -25px;
+      }
+    }
+  }
+
+  &__button {
+    @extend %button;
+    margin: 10px auto;
+    width: 200px;
+  }
+}

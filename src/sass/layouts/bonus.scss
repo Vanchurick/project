@@ -1,0 +1,112 @@
+.bonus {
+  padding: 0 10px;
+  margin-top: 40px;
+
+  &__title {
+    @extend %title;
+    width: 70%;
+    margin: 0 auto;
+
+    span {
+      @extend %mark-black;
+    }
+  }
+
+  &__text {
+    @extend %main-think;
+    width: 50%;
+    margin: 10px auto;
+  }
+
+  &__list {
+    @extend %text;
+    list-style: none;
+    padding: 5px;
+
+    .bonus__list-item {
+      margin: 0 auto;
+      width: 65%;
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+
+      .bonus__list-number {
+        font-size: 16px;
+        font-weight: 900;
+        margin-right: 10px;
+        position: relative;
+
+        &::after {
+          content: "";
+          display: block;
+          width: 6px;
+          height: 6px;
+          background-color: $light-blue;
+          position: absolute;
+          bottom: 30px;
+          right: 5px;
+        }
+      }
+
+      .bonus__list-text {
+        p:first-child {
+          text-transform: uppercase;
+          font-weight: 900;
+        }
+
+        p:last-child {
+          margin-top: 5px;
+
+          span {
+            @extend %mark-black;
+          }
+        }
+      }
+    }
+  }
+
+  &__form {
+    @extend %text;
+    font-size: 5px;
+    line-height: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px 40px;
+    width: 80%;
+    margin: 20px auto;
+    box-shadow: 0 2px 2px 1px rgb(0, 0, 0);
+
+    label {
+      margin-top: 15px;
+      color: $light-gray;
+    }
+
+    input {
+      border: none;
+      border-bottom: 1px solid $light-gray;
+      width: 100%;
+      margin-top: 5px;
+    }
+
+    input::placeholder {
+      font-size: 6px;
+      font-weight: 900;
+    }
+
+    button {
+      @extend %button;
+      margin-top: 30px;
+      width: 120px;
+      height: 20px;
+      font-size: 5px;
+      line-height: 8px;
+    }
+
+    button:hover {
+      color: $orange;
+      background-color: $white;
+      font-size: 7px;
+      border: 1px solid $orange;
+    }
+  }
+}

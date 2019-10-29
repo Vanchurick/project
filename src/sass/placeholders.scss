@@ -49,8 +49,8 @@
 %button:hover {
   background-color: $white;
   color: $orange;
-  font-size: $mobile-text-font-size + 2px;
   box-sizing: 0 0 5px 5px $orange;
+  border: 1px solid $orange;
 }
 
 %main-think {

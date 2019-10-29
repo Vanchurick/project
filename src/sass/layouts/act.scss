@@ -1,0 +1,58 @@
+.act {
+  padding: 10px;
+
+  &__title {
+    @extend %title;
+    width: 130px;
+    margin: 25px auto 0;
+  }
+
+  &__text-container {
+    width: 200px;
+    margin: 0 auto;
+  }
+
+  &__text {
+    @extend %text;
+    color: $light-gray;
+    margin-top: 15px;
+
+    span {
+      font-weight: 900;
+      color: $black;
+    }
+
+    &--main {
+      @extend %main-think;
+      width: 150px;
+      margin: 5px auto 0;
+      color: $black;
+    }
+
+    &--ps {
+      margin-top: 20px;
+      span {
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: 900;
+        color: $black;
+      }
+    }
+
+    &--bold {
+      font-weight: 900;
+      color: $black;
+      margin-top: 5px;
+    }
+
+    &--orange {
+      color: $orange;
+      text-align: right;
+    }
+  }
+
+  &__button {
+    @extend %button;
+    margin: 20px auto 0;
+  }
+}

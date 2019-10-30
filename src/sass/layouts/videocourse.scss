@@ -4,7 +4,7 @@
 
   &__title {
     @extend %title;
-    width: 70%;
+    width: 205px;
     margin: 0 auto;
   }
 
@@ -14,20 +14,21 @@
     &--main {
       @extend %main-think;
       margin: 10px auto 0;
-      width: 55%;
+      width: 160px;
     }
 
     &--list-title {
       text-transform: uppercase;
       font-weight: 900;
-      width: 90%;
+      width: 255px;
       margin: 30px auto 0;
     }
   }
 
   &__image {
     display: block;
-    margin-top: 23px;
+    width: 300px;
+    margin: 23px auto 0;
   }
 
   &__list {
@@ -35,7 +36,8 @@
     list-style: none;
 
     &--first {
-      padding: 0 50px;
+      width: 200px;
+      margin: 0 auto;
 
       li {
         width: 80%;
@@ -67,9 +69,7 @@
     justify-content: center;
     align-items: center;
     height: 80px;
-  }
-
-  &__prices-text-container {
+    margin-top: 20px;
   }
 
   &__prices-text {

@@ -1,11 +1,11 @@
 .dry-facts {
-  margin-top: 45px;
+  margin-top: 50px;
   padding: 0 10px;
 }
 
 .dry-facts_title {
   @extend %title;
-  width: 60%;
+  width: 165px;
   margin: 20px auto 0;
 
   &--first {
@@ -14,7 +14,7 @@
 
   &--second {
     margin-top: 15px;
-    width: 60%;
+    width: 160px;
 
     span {
       @extend %mark-black;
@@ -29,18 +29,20 @@
 
   &--first {
     @extend %main-think;
-    width: 60%;
+    width: 180px;
     margin: 20px auto 0;
   }
 
   &--second {
     font-weight: 700;
-    margin-top: 15px;
+    width: 300px;
+    margin: 15px auto 0;
   }
 
   &--third {
     color: $gray;
-    margin-top: 5px;
+    width: 300px;
+    margin: 5px auto 0;
 
     span {
       @extend %mark-blue;
@@ -50,8 +52,9 @@
 }
 
 .dry-facts-list {
-  margin-top: 30px;
-  padding: 0px 0px 0px 28px;
+  padding-left: 10px;
+  width: 270px;
+  margin: 30px auto 0;
   list-style: none;
 }
 
@@ -97,6 +100,7 @@
 
 .dry-facts_image {
   display: block;
-  margin-top: 35px;
-  // padding: 10px;
+
+  width: 300px;
+  margin: 35px auto 0;
 }

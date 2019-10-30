@@ -3,13 +3,13 @@
 
   &_title {
     @extend %title;
-    width: 51%;
+    width: 155px;
     margin: 18px auto;
   }
 
   &_text {
     @extend %main-think;
-    width: 70%;
+    width: 210px;
     margin: 10px auto;
 
     span {

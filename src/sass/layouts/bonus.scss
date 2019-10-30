@@ -1,10 +1,10 @@
 .bonus {
   padding: 0 10px;
-  margin-top: 40px;
+  margin-top: 35px;
 
   &__title {
     @extend %title;
-    width: 70%;
+    width: 205px;
     margin: 0 auto;
 
     span {
@@ -14,7 +14,7 @@
 
   &__text {
     @extend %main-think;
-    width: 50%;
+    width: 150px;
     margin: 10px auto;
   }
 
@@ -22,10 +22,10 @@
     @extend %text;
     list-style: none;
     padding: 5px;
+    width: 200px;
+    margin: 0 auto;
 
     .bonus__list-item {
-      margin: 0 auto;
-      width: 65%;
       margin-top: 20px;
       display: flex;
       justify-content: space-between;
@@ -72,7 +72,7 @@
     display: flex;
     flex-direction: column;
     padding: 20px 40px 40px;
-    width: 80%;
+    width: 250px;
     margin: 20px auto;
     box-shadow: 0 2px 2px 1px rgb(0, 0, 0);
 

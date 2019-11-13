@@ -1,10 +1,18 @@
 .earn {
   padding: 30px 10px 0;
 
+  @media (min-width: 480px) {
+    padding: 30px 20px 0;
+  }
+
   &__image {
     display: block;
     width: 300px;
     margin: 20px auto 0;
+
+    @media (min-width: 480px) {
+      width: 440px;
+    }
   }
 
   &__text {
@@ -12,8 +20,6 @@
 
     &--first {
       font-weight: 900;
-      width: 300px;
-      margin: 0 auto;
     }
 
     &--second {
@@ -21,6 +27,10 @@
       text-transform: uppercase;
       width: 180px;
       margin: 20px auto 0;
+
+      @media (min-width: 480px) {
+        width: 250px;
+      }
     }
 
     &--third {
@@ -28,6 +38,10 @@
       text-transform: uppercase;
       width: 300px;
       margin: 25px auto 0;
+
+      @media (min-width: 480px) {
+        width: 440px;
+      }
     }
 
     &--fourth {
@@ -36,6 +50,10 @@
       font-weight: 700;
       margin: 30px auto;
       text-align: center;
+
+      @media (min-width: 480px) {
+        width: 260px;
+      }
     }
   }
 
@@ -47,6 +65,10 @@
     span {
       @extend %mark-black;
     }
+
+    @media (min-width: 480px) {
+      width: 245px;
+    }
   }
 
   &__list {
@@ -56,6 +78,10 @@
     margin: 0 auto;
     font-weight: 700;
     list-style: none;
+
+    @media (min-width: 480px) {
+      width: 440px;
+    }
   }
 
   &__list-item {

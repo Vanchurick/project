@@ -10,12 +10,20 @@
   background-color: $dark-blue;
   color: $light-gray;
 
+  @media (min-width: 480px) {
+    font-size: 9px;
+  }
+
   &__logo {
     margin-right: 10px;
   }
 
   &__contacts {
     width: 70px;
+
+    @media (min-width: 480px) {
+      width: 80px;
+    }
 
     p:first-child {
       text-transform: uppercase;
@@ -38,5 +46,10 @@
     text-transform: uppercase;
     font-weight: 900;
     padding: 3px 1px;
+
+    @media (min-width: 480px) {
+      height: 30px;
+      width: 120px;
+    }
   }
 }

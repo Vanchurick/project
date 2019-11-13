@@ -7,6 +7,10 @@
     width: 205px;
     margin: 0 auto;
 
+    @media (min-width: 480px) {
+      width: 290px;
+    }
+
     span {
       @extend %mark-black;
     }
@@ -16,6 +20,10 @@
     @extend %main-think;
     width: 150px;
     margin: 10px auto;
+
+    @media (min-width: 480px) {
+      width: 270px;
+    }
   }
 
   &__list {
@@ -24,6 +32,10 @@
     padding: 5px;
     width: 200px;
     margin: 0 auto;
+
+    @media (min-width: 480px) {
+      width: 290px;
+    }
 
     .bonus__list-item {
       margin-top: 20px;
@@ -35,6 +47,10 @@
         font-weight: 900;
         margin-right: 10px;
         position: relative;
+
+        @media (min-width: 480px) {
+          font-size: 25px;
+        }
 
         &::after {
           content: "";
@@ -67,14 +83,16 @@
 
   &__form {
     @extend %text;
-    font-size: 5px;
-    line-height: 8px;
     display: flex;
     flex-direction: column;
     padding: 20px 40px 40px;
     width: 250px;
     margin: 20px auto;
     box-shadow: 0 2px 2px 1px rgb(0, 0, 0);
+
+    @media (min-width: 480px) {
+      width: 320px;
+    }
 
     label {
       margin-top: 15px;
@@ -91,6 +109,10 @@
     input::placeholder {
       font-size: 6px;
       font-weight: 900;
+
+      @media (min-width: 480px) {
+        font-size: 8px;
+      }
     }
 
     button {
@@ -100,6 +122,10 @@
       height: 20px;
       font-size: 5px;
       line-height: 8px;
+
+      @media (min-width: 480px) {
+        font-size: 9px;
+      }
     }
 
     button:hover {
@@ -107,6 +133,10 @@
       background-color: $white;
       font-size: 7px;
       border: 1px solid $orange;
+
+      @media (min-width: 480px) {
+        font-size: 9px;
+      }
     }
   }
 }

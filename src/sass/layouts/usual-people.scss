@@ -5,12 +5,20 @@
     @extend %title;
     width: 155px;
     margin: 18px auto;
+
+    @media (min-width: 480px) {
+      width: 220px;
+    }
   }
 
   &_text {
     @extend %main-think;
     width: 210px;
     margin: 10px auto;
+
+    @media (min-width: 480px) {
+      width: 300px;
+    }
 
     span {
       @extend %mark-black;
@@ -37,6 +45,11 @@
     width: 200px;
     height: 140px;
     margin: 25px auto 0;
+
+    @media (min-width: 480px) {
+      width: 350px;
+      height: 250px;
+    }
   }
 
   .opinion_info {
@@ -71,6 +84,10 @@
     justify-content: space-between;
     width: 200px;
     margin: 0 auto;
+
+    @media (min-width: 480px) {
+      width: 350px;
+    }
   }
 
   .opinion_pages {
@@ -84,9 +101,17 @@
     margin: 5px 3px;
     font-weight: 900;
 
+    @media (min-width: 480px) {
+      font-size: 9px;
+    }
+
     &--active {
       font-size: 9px;
       position: relative;
+
+      @media (min-width: 480px) {
+        font-size: 15px;
+      }
 
       &::before {
         content: "";
@@ -97,6 +122,10 @@
         position: absolute;
         top: 50%;
         right: 0px;
+
+        @media (min-width: 480px) {
+          width: 20px;
+        }
       }
     }
   }
@@ -115,5 +144,10 @@
     color: $white;
     margin-left: 1px;
     cursor: pointer;
+
+    @media (min-width: 480px) {
+      height: 20px;
+      width: 20px;
+    }
   }
 }

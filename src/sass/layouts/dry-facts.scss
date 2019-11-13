@@ -1,6 +1,10 @@
 .dry-facts {
   margin-top: 50px;
   padding: 0 10px;
+
+  @media (min-width: 480px) {
+    padding: 0 20px;
+  }
 }
 
 .dry-facts_title {
@@ -10,16 +14,29 @@
 
   &--first {
     text-align: center;
+
+    @media (min-width: 480px) {
+      width: 100%;
+    }
   }
 
   &--second {
     margin-top: 15px;
     width: 160px;
 
+    @media (min-width: 480px) {
+      width: 230px;
+    }
+
     span {
       @extend %mark-black;
       font-size: 12px;
       line-height: 16px;
+
+      @media (min-width: 480px) {
+        font-size: 18px;
+        line-height: 24px;
+      }
     }
   }
 }
@@ -31,18 +48,30 @@
     @extend %main-think;
     width: 180px;
     margin: 20px auto 0;
+
+    @media (min-width: 480px) {
+      width: 250px;
+    }
   }
 
   &--second {
     font-weight: 700;
     width: 300px;
     margin: 15px auto 0;
+
+    @media (min-width: 480px) {
+      width: 100%;
+    }
   }
 
   &--third {
     color: $gray;
     width: 300px;
     margin: 5px auto 0;
+
+    @media (min-width: 480px) {
+      width: 100%;
+    }
 
     span {
       @extend %mark-blue;
@@ -56,6 +85,10 @@
   width: 270px;
   margin: 30px auto 0;
   list-style: none;
+
+  @media (min-width: 480px) {
+    width: 380px;
+  }
 }
 
 .dry-facts-item:not(:first-child) {
@@ -100,7 +133,10 @@
 
 .dry-facts_image {
   display: block;
-
   width: 300px;
   margin: 35px auto 0;
+
+  @media (min-width: 480px) {
+    width: 440px;
+  }
 }

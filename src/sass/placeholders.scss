@@ -5,6 +5,11 @@
   text-transform: uppercase;
   line-height: 17px;
   letter-spacing: 0.5px;
+
+  @media (min-width: 480px) {
+    font-size: $small-tablet-title-font-size;
+    line-height: $small-tablet-title-line-height;
+  }
 }
 
 %text {
@@ -12,6 +17,11 @@
   font-size: $mobile-text-font-size;
   font-weight: 400;
   line-height: 13px;
+
+  @media (min-width: 480px) {
+    font-size: $small-tablet-text-font-size;
+    line-height: $small-tablet-text-line-height;
+  }
 }
 
 %main-phrase {
@@ -19,6 +29,11 @@
   font-size: $mobile-text-font-size;
   font-weight: 900;
   text-transform: uppercase;
+
+  @media (min-width: 480px) {
+    font-size: $small-tablet-text-font-size;
+    line-height: $small-tablet-text-line-height;
+  }
 }
 
 %mark-blue {
@@ -44,6 +59,13 @@
   text-transform: uppercase;
   cursor: pointer;
   outline: none;
+
+  @media (min-width: 480px) {
+    width: 200px;
+    height: 45px;
+    font-size: $small-tablet-text-font-size;
+    line-height: $small-tablet-text-line-height;
+  }
 }
 
 %button:hover {
@@ -68,6 +90,12 @@
     position: absolute;
     left: -8px;
     top: 7px;
+
+    @media (min-width: 480px) {
+      height: 2px;
+      width: 20px;
+      left: -15px;
+    }
   }
 }
 
@@ -77,6 +105,10 @@
   list-style: none;
   width: 165px;
   margin: 0 auto;
+
+  @media (min-width: 480px) {
+    width: 240px;
+  }
 
   li {
     margin-top: 15px;
@@ -92,6 +124,12 @@
       position: absolute;
       left: -25px;
       top: 10px;
+
+      @media (min-width: 480px) {
+        left: -40px;
+        top: 15px;
+        line-height: 15px;
+      }
     }
 
     p:first-child {

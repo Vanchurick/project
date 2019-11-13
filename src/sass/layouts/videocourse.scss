@@ -6,6 +6,10 @@
     @extend %title;
     width: 205px;
     margin: 0 auto;
+
+    @media (min-width: 480px) {
+      width: 285px;
+    }
   }
 
   &__text {
@@ -15,6 +19,10 @@
       @extend %main-think;
       margin: 10px auto 0;
       width: 160px;
+
+      @media (min-width: 480px) {
+        width: 240px;
+      }
     }
 
     &--list-title {
@@ -22,6 +30,10 @@
       font-weight: 900;
       width: 255px;
       margin: 30px auto 0;
+
+      @media (min-width: 480px) {
+        width: 360px;
+      }
     }
   }
 
@@ -29,6 +41,10 @@
     display: block;
     width: 300px;
     margin: 23px auto 0;
+
+    @media (min-width: 480px) {
+      width: 440px;
+    }
   }
 
   &__list {
@@ -39,9 +55,17 @@
       width: 200px;
       margin: 0 auto;
 
+      @media (min-width: 480px) {
+        width: 230px;
+      }
+
       li {
         width: 80%;
         margin-top: 15px;
+
+        @media (min-width: 480px) {
+          width: 100%;
+        }
 
         p:first-child {
           span {
@@ -78,6 +102,14 @@
     line-height: 16px;
     width: 100px;
 
+    @media (min-width: 480px) {
+      font-size: 18px;
+      line-height: 25px;
+
+      width: 120px;
+      margin: 20px;
+    }
+
     span {
       @extend %mark-blue;
     }
@@ -95,11 +127,19 @@
         font-size: 11px;
         text-decoration: line-through;
         color: $gray;
+
+        @media (min-width: 480px) {
+          font-size: 16px;
+        }
       }
 
       &--new {
         span {
           font-size: 25px;
+
+          @media (min-width: 480px) {
+            font-size: 35px;
+          }
         }
       }
     }

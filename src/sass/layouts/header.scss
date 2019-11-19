@@ -9,6 +9,10 @@
   @media (min-width: 480px) {
     height: 550px;
   }
+
+  @media (min-width: 768px) {
+    position: relative;
+  }
 }
 
 .navigation {
@@ -18,6 +22,10 @@
 
   @media (min-width: 480px) {
     padding: 20px;
+  }
+
+  @media (min-width: 768px) {
+    padding: 30px;
   }
 }
 
@@ -45,6 +53,12 @@
     width: 235px;
     line-height: 39px;
   }
+
+  @media (min-width: 768px) {
+    font-size: 44px;
+    width: 100%;
+    line-height: 56px;
+  }
 }
 
 .header-info__start {
@@ -59,6 +73,11 @@
 
   @media (min-width: 480px) {
     width: 340px;
+  }
+
+  @media (min-width: 768px) {
+    margin-top: 130px;
+    width: 250px;
   }
 }
 
@@ -92,6 +111,11 @@
   @media (min-width: 480px) {
     width: 325px;
   }
+
+  @media (min-width: 768px) {
+    width: 40%;
+    margin: 0 0 0 auto;
+  }
 }
 
 .header-info__mathematic {
@@ -103,6 +127,11 @@
   @media (min-width: 480px) {
     width: 325px;
   }
+
+  @media (min-width: 768px) {
+    width: 40%;
+    margin: 5px 0 0 auto;
+  }
 }
 
 .header-button {
@@ -111,5 +140,45 @@
 
   @media (min-width: 480px) {
     margin-top: 40px;
+  }
+
+  @media (min-width: 768px) {
+    position: absolute;
+    margin: 0;
+    left: 15%;
+    bottom: 10%;
+  }
+}
+
+.header__image {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+    height: 480px;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .header-info {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 30px;
+  }
+
+  .header__title-container {
+    width: 50%;
+    text-align: center;
+  }
+
+  .header__info-container {
+    width: 50%;
+    z-index: 2;
+    position: relative;
   }
 }

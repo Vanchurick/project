@@ -10,6 +10,11 @@
     font-size: $small-tablet-title-font-size;
     line-height: $small-tablet-title-line-height;
   }
+
+  @media (min-width: 768px) {
+    font-size: $big-tablet-title-font-size;
+    line-height: $big-tablet-title-line-height;
+  }
 }
 
 %text {
@@ -22,17 +27,10 @@
     font-size: $small-tablet-text-font-size;
     line-height: $small-tablet-text-line-height;
   }
-}
 
-%main-phrase {
-  font-family: $main-font;
-  font-size: $mobile-text-font-size;
-  font-weight: 900;
-  text-transform: uppercase;
-
-  @media (min-width: 480px) {
-    font-size: $small-tablet-text-font-size;
-    line-height: $small-tablet-text-line-height;
+  @media (min-width: 768px) {
+    font-size: $mobile-text-font-size;
+    line-height: $mobile-text-line-height;
   }
 }
 

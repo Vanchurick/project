@@ -1,6 +1,14 @@
 .important {
   padding: 1px 10px;
 
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 280px;
+    margin-top: 30px;
+  }
+
   &__title {
     @extend %title;
     text-align: center;

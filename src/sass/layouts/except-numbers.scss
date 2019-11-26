@@ -1,15 +1,95 @@
 .except-numbers {
   padding: 0 10px;
 
+  .except-numbers_image {
+    display: block;
+    width: 300px;
+    margin: 35px auto 0;
+
+    @media (min-width: 480px) {
+      width: 440px;
+    }
+
+    @media (min-width: 768px) {
+      width: auto;
+      margin-top: 0;
+    }
+  }
+
+  .except-numbers__title {
+    @extend %title;
+    width: 165px;
+    margin: 20px auto 0;
+
+    &--second {
+      margin-top: 15px;
+      width: 160px;
+
+      @media (min-width: 480px) {
+        width: 230px;
+      }
+
+      span {
+        @extend %mark-black;
+        font-size: 12px;
+        line-height: 16px;
+
+        @media (min-width: 480px) {
+          font-size: 18px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+
   .except-numbers_title {
     @extend %title;
-    @extend %mark-black;
     text-align: center;
     margin: 25px auto 0;
     width: 200px;
 
+    span {
+      @extend %mark-black;
+    }
+
     @media (min-width: 480px) {
       width: 280px;
+    }
+
+    @media (min-width: 768px) {
+      margin-top: 0;
+      margin-bottom: 25px;
+      text-align: left;
+      width: 210px;
+    }
+  }
+
+  .except-numbers__text {
+    @extend %text;
+
+    &--second {
+      font-weight: 700;
+      width: 300px;
+      margin: 15px auto 0;
+
+      @media (min-width: 480px) {
+        width: 100%;
+      }
+    }
+
+    &--third {
+      color: $gray;
+      width: 300px;
+      margin: 5px auto 0;
+
+      @media (min-width: 480px) {
+        width: 100%;
+      }
+
+      span {
+        @extend %mark-blue;
+        font-weight: 700;
+      }
     }
   }
 
@@ -31,6 +111,10 @@
 
     @media (min-width: 480px) {
       width: 410px;
+    }
+
+    @media (min-width: 768px) {
+      width: 100%;
     }
   }
 
@@ -67,5 +151,22 @@
     @extend %text;
     margin-top: 8px;
     width: 80%;
+  }
+}
+
+@media (min-width: 768px) {
+  .except-numbers {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    margin-top: 30px;
+  }
+
+  .except-numbers__image-container {
+    width: 40%;
+  }
+
+  .except-numbers__info {
+    width: 40%;
   }
 }

@@ -2,6 +2,11 @@
   padding: 0 10px;
   margin-top: 20px;
 
+  @media (min-width: 768px) {
+    padding: 30px;
+    position: relative;
+  }
+
   &_title {
     @extend %title;
     width: 145px;
@@ -16,6 +21,26 @@
     }
   }
 
+  .four-steps__bg {
+    display: none;
+
+    @media (min-width: 768px) {
+      display: block;
+      position: absolute;
+      top: 0;
+      z-index: -1;
+      // right: 0;
+    }
+
+    &--step {
+      right: 0;
+    }
+
+    &--four {
+      right: 10%;
+    }
+  }
+
   &_text {
     @extend %text;
 
@@ -26,6 +51,11 @@
 
       @media (min-width: 480px) {
         width: 290px;
+      }
+
+      @media (min-width: 768px) {
+        width: 150px;
+        margin-top: 20px;
       }
     }
 
@@ -38,6 +68,11 @@
 
       @media (min-width: 480px) {
         width: 300px;
+      }
+
+      @media (min-width: 768px) {
+        margin: 0 0 0 auto;
+        width: 50%;
       }
 
       &::before {
@@ -54,6 +89,10 @@
         @media (min-width: 480px) {
           width: 25px;
         }
+
+        @media (min-width: 768px) {
+          top: 5px;
+        }
       }
     }
 
@@ -64,6 +103,12 @@
 
       @media (min-width: 480px) {
         width: 300px;
+      }
+
+      @media (min-width: 768px) {
+        width: 15%;
+        text-transform: uppercase;
+        font-weight: 900;
       }
     }
   }
@@ -78,10 +123,21 @@
       width: 250px;
     }
 
+    @media (min-width: 768px) {
+      width: 45%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
     &-item {
       display: flex;
       @extend %text;
       margin-top: 20px;
+
+      @media (min-width: 768px) {
+        margin: 0 30px 30px 0;
+        width: 40%;
+      }
 
       &_number-container {
         max-width: 25px;
@@ -131,6 +187,10 @@
     @media (min-width: 480px) {
       width: 440px;
     }
+
+    @media (min-width: 768px) {
+      display: none;
+    }
   }
 
   .todo {
@@ -140,5 +200,33 @@
   &_button {
     @extend %button;
     margin: 30px auto 0;
+
+    @media (min-width: 768px) {
+      position: absolute;
+      left: 11%;
+      top: 90%;
+      margin: 0;
+      width: 150px;
+      height: 30px;
+      font-size: 9px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .four-steps__first {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .four-steps__title-container {
+    width: 45%;
+    position: relative;
+  }
+
+  .four-steps__second {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
   }
 }

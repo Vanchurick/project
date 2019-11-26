@@ -2,6 +2,14 @@
   padding: 0 10px;
   margin-top: 20px;
 
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 400px;
+    padding: 30px;
+  }
+
   &_title {
     @extend %title;
     width: 140px;
@@ -10,15 +18,19 @@
     @media (min-width: 480px) {
       width: 195px;
     }
+
+    @media (min-width: 768px) {
+      width: 260px;
+    }
   }
 
   &_image {
     display: block;
-    width: 300px;
     margin: 20px auto 0;
+    text-align: center;
 
-    @media (min-width: 480px) {
-      width: 440px;
+    @media (min-width: 768px) {
+      margin-top: 0;
     }
   }
 
@@ -42,6 +54,10 @@
 
       @media (min-width: 480px) {
         width: 300px;
+      }
+
+      @media (min-width: 768px) {
+        margin: 20px auto;
       }
     }
 
@@ -73,5 +89,11 @@
       color: $gray;
       margin-top: 10px;
     }
+  }
+}
+
+@media (min-width: 768px) {
+  .career__title-container {
+    width: 45%;
   }
 }

@@ -1,6 +1,12 @@
 .usual-people {
   padding: 10px 10px;
 
+  @media (min-width: 768px) {
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+  }
+
   &_title {
     @extend %title;
     width: 155px;
@@ -8,6 +14,10 @@
 
     @media (min-width: 480px) {
       width: 220px;
+    }
+
+    @media (min-width: 768px) {
+      width: 90%;
     }
   }
 
@@ -18,6 +28,11 @@
 
     @media (min-width: 480px) {
       width: 300px;
+    }
+
+    @media (min-width: 768px) {
+      width: 150px;
+      margin-top: 30px;
     }
 
     span {
@@ -36,6 +51,10 @@
   &_opinion {
     width: 90%;
     margin: 0 auto;
+
+    @media (min-width: 768px) {
+      width: 45%;
+    }
   }
 
   .opinion_interview {
@@ -49,6 +68,10 @@
     @media (min-width: 480px) {
       width: 350px;
       height: 250px;
+    }
+
+    @media (min-width: 768px) {
+      width: 100%;
     }
   }
 
@@ -87,6 +110,10 @@
 
     @media (min-width: 480px) {
       width: 350px;
+    }
+
+    @media (min-width: 768px) {
+      width: 100%;
     }
   }
 
@@ -149,5 +176,11 @@
       height: 20px;
       width: 20px;
     }
+  }
+}
+
+@media (min-width: 768px) {
+  .usual-people__title-container {
+    width: 45%;
   }
 }

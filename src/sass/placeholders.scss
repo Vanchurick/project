@@ -108,9 +108,22 @@
     width: 240px;
   }
 
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: space-between;
+    width: 70%;
+    margin: 0;
+  }
+
   li {
     margin-top: 15px;
     position: relative;
+
+    @media (min-width: 768px) {
+      width: 25%;
+      margin: 2% 3%;
+    }
 
     &::before {
       content: "[ 00" counter(item) " ]";
@@ -127,6 +140,11 @@
         left: -40px;
         top: 15px;
         line-height: 15px;
+      }
+
+      @media (min-width: 768px) {
+        left: -25px;
+        top: 10px;
       }
     }
 

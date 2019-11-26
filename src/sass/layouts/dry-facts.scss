@@ -5,6 +5,24 @@
   @media (min-width: 480px) {
     padding: 0 20px;
   }
+
+  @media (min-width: 768px) {
+    display: flex;
+    padding: 0 30px;
+    position: relative;
+  }
+}
+
+.dry-facts__graph {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    z-index: -1;
+  }
 }
 
 .dry-facts_title {
@@ -17,26 +35,6 @@
 
     @media (min-width: 480px) {
       width: 100%;
-    }
-  }
-
-  &--second {
-    margin-top: 15px;
-    width: 160px;
-
-    @media (min-width: 480px) {
-      width: 230px;
-    }
-
-    span {
-      @extend %mark-black;
-      font-size: 12px;
-      line-height: 16px;
-
-      @media (min-width: 480px) {
-        font-size: 18px;
-        line-height: 24px;
-      }
     }
   }
 }
@@ -52,30 +50,9 @@
     @media (min-width: 480px) {
       width: 250px;
     }
-  }
 
-  &--second {
-    font-weight: 700;
-    width: 300px;
-    margin: 15px auto 0;
-
-    @media (min-width: 480px) {
-      width: 100%;
-    }
-  }
-
-  &--third {
-    color: $gray;
-    width: 300px;
-    margin: 5px auto 0;
-
-    @media (min-width: 480px) {
-      width: 100%;
-    }
-
-    span {
-      @extend %mark-blue;
-      font-weight: 700;
+    @media (min-width: 768px) {
+      width: 130px;
     }
   }
 }
@@ -89,10 +66,29 @@
   @media (min-width: 480px) {
     width: 380px;
   }
+
+  @media (min-width: 768px) {
+    width: 50%;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+.dry-facts-item {
+  @media (min-width: 768px) {
+    width: 45%;
+    margin: 0;
+  }
 }
 
 .dry-facts-item:not(:first-child) {
   margin-top: 20px;
+
+  @media (min-width: 768px) {
+    margin: 0;
+  }
 }
 
 .dry-facts-item_text {
@@ -113,6 +109,10 @@
       position: absolute;
       bottom: 3px;
       left: -15px;
+
+      @media (min-width: 768px) {
+        display: none;
+      }
     }
 
     span {
@@ -131,12 +131,13 @@
   }
 }
 
-.dry-facts_image {
-  display: block;
-  width: 300px;
-  margin: 35px auto 0;
+@media (min-width: 768px) {
+  .dry-facts__head {
+    width: 30%;
+  }
 
-  @media (min-width: 480px) {
-    width: 440px;
+  .order-last {
+    order: 1;
+    padding-top: 10px;
   }
 }

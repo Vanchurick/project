@@ -62,6 +62,10 @@
       text-align: left;
       width: 210px;
     }
+
+    @media (min-width: 960px) {
+      width: 260px;
+    }
   }
 
   .except-numbers__text {

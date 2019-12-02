@@ -35,6 +35,10 @@
       margin-top: 30px;
     }
 
+    @media (min-width: 960px) {
+      width: 200px;
+    }
+
     span {
       @extend %mark-black;
     }

@@ -10,6 +10,10 @@
     padding: 30px;
   }
 
+  @media (min-width: 960px) {
+    height: 500px;
+  }
+
   &_title {
     @extend %title;
     width: 140px;
@@ -21,6 +25,10 @@
 
     @media (min-width: 768px) {
       width: 260px;
+    }
+
+    @media (min-width: 960px) {
+      width: 320px;
     }
   }
 

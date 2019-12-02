@@ -16,6 +16,10 @@
       width: 200px;
     }
 
+    @media (min-width: 960px) {
+      width: 300px;
+    }
+
     span {
       @extend %mark-black;
     }

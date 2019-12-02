@@ -15,6 +15,11 @@
     font-size: $big-tablet-title-font-size;
     line-height: $big-tablet-title-line-height;
   }
+
+  @media (min-width: 960px) {
+    font-size: $desktop-title-font-size;
+    line-height: $desktop-title-line-height;
+  }
 }
 
 %text {
@@ -31,6 +36,11 @@
   @media (min-width: 768px) {
     font-size: $mobile-text-font-size;
     line-height: $mobile-text-line-height;
+  }
+
+  @media (min-width: 960px) {
+    font-size: $desktop-text-font-size;
+    line-height: $desktop-text-line-height;
   }
 }
 

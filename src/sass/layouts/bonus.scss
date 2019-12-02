@@ -114,6 +114,10 @@
       margin: 0;
     }
 
+    @media (min-width: 768px) {
+      width: 400px;
+    }
+
     label {
       margin-top: 15px;
       color: $light-gray;

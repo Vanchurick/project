@@ -27,6 +27,10 @@
   @media (min-width: 768px) {
     padding: 30px;
   }
+
+  @media (min-width: 960px) {
+    padding: 40px;
+  }
 }
 
 .navigation_button {
@@ -59,6 +63,12 @@
     width: 100%;
     line-height: 56px;
   }
+
+  @media (min-width: 960px) {
+    font-size: 56px;
+    width: 100%;
+    line-height: 70px;
+  }
 }
 
 .header-info__start {
@@ -78,6 +88,10 @@
   @media (min-width: 768px) {
     margin-top: 130px;
     width: 250px;
+  }
+
+  @media (min-width: 960px) {
+    margin-top: 80px;
   }
 }
 
@@ -162,6 +176,10 @@
     bottom: 0;
     right: 0;
   }
+
+  @media (min-width: 960px) {
+    right: 10%;
+  }
 }
 
 @media (min-width: 768px) {
@@ -181,4 +199,9 @@
     z-index: 2;
     position: relative;
   }
+}
+
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
 }

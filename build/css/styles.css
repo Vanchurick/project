@@ -598,7 +598,7 @@ template {
   cursor: pointer;
   width: 20px;
   height: 15px;
-  background-image: url("../../images/burg_menu.png");
+  background-image: url("../images/burg_menu.png");
   background-repeat: no-repeat;
   background-position: center;
 }

@@ -578,7 +578,7 @@ template {
 }
 
 .header {
-  background: url("../../images/bg_header.png") #052139;
+  background: url("../images/bg_header.png") #052139;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

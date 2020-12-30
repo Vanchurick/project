@@ -560,7 +560,6 @@ template {
   counter-increment: item;
   color: #fff;
   background-color: #ff6b08;
-  -webkit-transform: rotate(270deg);
   transform: rotate(270deg);
   position: absolute;
   left: -25px;
@@ -1192,7 +1191,6 @@ template {
   width: 20px;
   height: 1px;
   background-color: #000000;
-  -webkit-transform: rotate(125deg);
   transform: rotate(125deg);
   position: absolute;
   left: -30px;
@@ -1423,12 +1421,12 @@ template {
   margin-top: 5px;
 }
 
-.bonus__form input::-webkit-input-placeholder {
+.bonus__form input::-moz-placeholder {
   font-size: 6px;
   font-weight: 900;
 }
 
-.bonus__form input::-ms-input-placeholder {
+.bonus__form input:-ms-input-placeholder {
   font-size: 6px;
   font-weight: 900;
 }
@@ -1538,7 +1536,6 @@ template {
   height: 1px;
   width: 20px;
   background-color: #000000;
-  -webkit-transform: rotate(120deg);
   transform: rotate(120deg);
   position: absolute;
   top: 15px;
@@ -2052,11 +2049,11 @@ template {
     width: 320px;
   }
 
-  .bonus__form input::-webkit-input-placeholder {
+  .bonus__form input::-moz-placeholder {
     font-size: 8px;
   }
 
-  .bonus__form input::-ms-input-placeholder {
+  .bonus__form input:-ms-input-placeholder {
     font-size: 8px;
   }
 

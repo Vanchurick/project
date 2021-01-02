@@ -9,7 +9,8 @@
     "build": "gulp build",
     "sprite": "gulp sprite",
     "images": "gulp images",
-    "preinstall": "npx npm-force-resolutions"
+    "preinstall": "npx npm-force-resolutions",
+    "deploy": "gulp deploy"
   },
   "repository": {
     "type": "git",
